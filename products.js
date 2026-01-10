@@ -1,0 +1,77 @@
+window.productsData = [
+    {
+        "id": "prod_1",
+        "category": "laptops",
+        "icon": "fas fa-laptop",
+        "title": {
+            "en": "Precision i9 Power",
+            "ar": "قوة i9 الدقيقة",
+            "fr": "Puissance Precision i9"
+        },
+        "description": {
+            "en": "i9 13th Gen, 64GB RAM, RTX 4080. Optimized for engineering and 3D work.",
+            "ar": "الجيل 13 i9، ذاكرة 64 جيجابايت، RTX 4080. محسن للأعمال الهندسية وثلاثية الأبعاد.",
+            "fr": "i9 13ème Gén, 64Go RAM, RTX 4080. Optimisé pour l'ingénierie et la 3D."
+        },
+        "price_label": {
+            "en": "Inquire for Price",
+            "ar": "استفسر عن السعر",
+            "fr": "Demander le Prix"
+        }
+    },
+    {
+        "id": "prod_2",
+        "category": "medical",
+        "icon": "fas fa-lungs",
+        "title": {
+            "en": "O2 Concentrator 5L",
+            "ar": "مكثف أكسجين 5 لتر",
+            "fr": "Concentrateur O2 5L"
+        },
+        "description": {
+            "en": "High-purity oxygen flow. Fully certified and lab-tested for performance.",
+            "ar": "تدفق أكسجين عالي النقاء. معتمد بالكامل ومختبر معمليًا للأداء.",
+            "fr": "Flux d'oxygène haute pureté. Entièrement certifié et testé en laboratoire."
+        },
+        "price_label": {
+            "en": "Inquire for Price",
+            "ar": "استفسر عن السعر",
+            "fr": "Demander le Prix"
+        }
+    },
+    {
+        "id": "prod_3",
+        "category": "components",
+        "icon": "fas fa-microchip",
+        "title": {
+            "en": "RTX Pro Graphics",
+            "ar": "بطاقة رسومات RTX Pro",
+            "fr": "Graphiques RTX Pro"
+        },
+        "description": {
+            "en": "NVIDIA professional grade GPU for workstation upgrades.",
+            "ar": "وحدة معالجة رسومات احترافية من NVIDIA لترقية محطات العمل.",
+            "fr": "GPU de qualité professionnelle NVIDIA pour les mises à niveau."
+        },
+        "price_label": {
+            "en": "Inquire for Price",
+            "ar": "استفسر عن السعر",
+            "fr": "Demander le Prix"
+        }
+    },
+    {
+        "id": "prod_4",
+        "category": "medical",
+        "icon": "fas fa-stethoscope",
+        "title": {
+            "en": "Diagnostic Vital Monitor",
+            "ar": "شاشة تشخيص العلامات الحيوية",
+            "fr": "Moniteur de Signes Vitaux"
+        },
+        "description": {
+            "en": "Multi-parameter patient monitor with high-resolution diagnostic display.",
+            "ar": "شاشة مراقبة المريض متعددة المعلمات مع عرض تشخيصي عالي الدقة.",
+            "fr": "Moniteur patient multi-paramètres avec affichage diagnostique haute résolution."
+        }
+    }
+];

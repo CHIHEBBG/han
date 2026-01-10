@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical | LAB-TECH Workshop</title>
+    <meta name="description" content="Lab-Tech specialized medical equipment repair and maintenance.">
+    <link rel="icon" type="image/svg+xml"
+        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🩺</text></svg>">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;800&family=Noto+Sans+Arabic:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="medical-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">LAB-TECH <span>Medical</span></div>
+        <nav class="centered-nav">
+            <a href="index.html" class="nav-link" data-i18n="nav-home">Home</a>
+            <a href="medical.html" class="nav-link" style="color:var(--primary)"
+                data-i18n="service-medical-title">Medical Devices</a>
+            <a href="laptop-repair.html" class="nav-link" data-i18n="nav-laptop-pc">Laptop & PC</a>
+            <a href="products.html" class="nav-link" data-i18n="service-sales-title">Sales & IT</a>
+            <a href="contact.html" class="nav-link" data-i18n="nav-contact">Contact</a>
+        </nav>
+        <div class="header-actions">
+            <div class="lang-switcher">
+                <button class="lang-btn" onclick="setLanguage('ar')">العربية</button>
+                <button class="lang-btn" onclick="setLanguage('en')">EN</button>
+                <button class="lang-btn" onclick="setLanguage('fr')">FR</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="medical-hero">
+            <div class="container">
+                <h1 data-i18n="med-hero-title" class="animate">Your Trusted Partner in <span class="highlight">Medical
+                        Precision</span></h1>
+                <p data-i18n="med-hero-desc" class="animate" style="animation-delay: 0.2s;">Comprehensive technical
+                    solutions for healthcare professionals.</p>
+                <div class="hero-btns animate" style="animation-delay: 0.4s;">
+                    <a href="#work" class="btn-primary" data-i18n="med-hero-btn-work">View Our Work</a>
+                    <a href="contact.html" class="btn-secondary" data-i18n="med-hero-btn-req">Request Service</a>
+                </div>
+            </div>
+            <div class="hero-shape"></div>
+        </section>
+
+
+
+        <section id="work" class="gallery-section dark-section">
+            <div class="section-header">
+                <h2 data-i18n="med-gallery-title">Our Technical Expertise</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="gallery-container container">
+                <div class="gallery-card animate">
+                    <div class="img-wrapper"><img src="ECG.jpg" alt="ECG"></div>
+                    <div class="card-caption">ECG Monitor Repair</div>
+                </div>
+                <div class="gallery-card animate" style="animation-delay: 0.1s;">
+                    <div class="img-wrapper"><img src="eco.PNG" alt="Ultrasound"></div>
+                    <div class="card-caption">Ultrasound Maintenance</div>
+                </div>
+                <div class="gallery-card animate" style="animation-delay: 0.2s;">
+                    <div class="img-wrapper"><img src="lab.PNG" alt="Lab"></div>
+                    <div class="card-caption">autoclave & labs calibration</div>
+                </div>
+                <div class="gallery-card animate" style="animation-delay: 0.3s;">
+                    <div class="img-wrapper"><img src="dental chair.jpg" alt="Dental"></div>
+                    <div class="card-caption">Dental Chair Service</div>
+                </div>
+                <div class="gallery-card animate" style="animation-delay: 0.4s;">
+                    <div class="img-wrapper"><img src="Tensimètre .jpg" alt="Tensimetre"></div>
+                    <div class="card-caption">Tensimètre Service</div>
+                </div>
+                <div class="gallery-card animate" style="animation-delay: 0.5s;">
+                    <div class="img-wrapper"><img src="cup.PNG" alt="Couveuse bébé"></div>
+                    <div class="card-caption">Couveuse bébé</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="why-us" class="benefits-section">
+            <div class="container">
+                <div class="benefits-layout">
+                    <div class="benefits-info">
+                        <h2 data-i18n="med-why-title">Why Lab-Tech?</h2>
+                        <div class="benefits-list">
+                            <div class="benefit-item"><span class="dot"></span>
+                                <p data-i18n="med-feature-1">Certified technicians...</p>
+                            </div>
+                            <div class="benefit-item"><span class="dot"></span>
+                                <p data-i18n="med-feature-2">Preventive plans...</p>
+                            </div>
+                            <div class="benefit-item"><span class="dot"></span>
+                                <p data-i18n="med-feature-3">Quick turnaround...</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="benefits-visual">
+                        <div class="vision-card">
+                            <h3 data-i18n="med-vision-title">Our Vision</h3>
+                            <p data-i18n="med-vision-text">"Excellence in... longevity."</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="medical-footer">
+        <div class="container footer-layout">
+            <div class="footer-brand">
+                <div class="logo">LAB-TECH</div>
+                <p data-i18n="footer-tagline">Advanced Technical Care</p>
+            </div>
+            <div class="footer-contact">
+                <div class="contact-item"><i class="fas fa-phone"></i> <span>+213 00 00 00 00</span></div>
+                <div class="contact-item"><i class="fas fa-envelope"></i> <span>contact@labtech.dz</span></div>
+                <div class="social-links"><a href="#"><i class="fab fa-facebook"></i></a><a href="#"><i
+                            class="fab fa-instagram"></i></a><a href="#"><i class="fab fa-linkedin"></i></a></div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Lab-Tech Workshop. <span data-i18n="footer-managed">Managed by</span> <span
+                    class="owners">Chiheb & Soufian</span></p>
+        </div>
+    </footer>
+
+    <script src="security.js"></script>
+    <script src="translations.js"></script>
+    <script src="global-script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LAB-TECH | Advanced technical solution</title>
+    <meta name="description"
+        content="Expert maintenance for high-end laptops and critical medical devices. Precision repair for tech and health equipment. Specialized in O2 concentrators, sonar systems and high-performance workstations.">
+    <link rel="icon" type="image/svg+xml"
+        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🛠️</text></svg>">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="nav-overlay" id="navOverlay"></div>
+
+    <header class="scrolled">
+        <div class="logo">
+            <a href="index.html">LAB-TECH <span>Workshop</span></a>
+        </div>
+
+        <nav id="navMenu">
+            <a href="index.html" class="active-link" data-i18n="nav-home">الرئيسية</a>
+            <a href="medical.html" data-i18n="service-medical-title">الأجهزة الطبية</a>
+            <a href="laptop-repair.html" data-i18n="nav-laptop-pc">لابتوب وكمبيوتر</a>
+            <a href="products.html" data-i18n="service-sales-title">المبيعات وتقنية المعلومات</a>
+            <a href="contact.html" data-i18n="nav-contact">اتصل بنا</a>
+        </nav>
+
+        <div class="header-right">
+            <div class="lang-switcher">
+                <button class="lang-btn" onclick="setLanguage('ar')">العربية</button>
+                <button class="lang-btn" onclick="setLanguage('en')">EN</button>
+                <button class="lang-btn" onclick="setLanguage('fr')">FR</button>
+            </div>
+            <div class="menu-toggle" id="menuToggle">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="hero">
+                <h1 data-i18n="hero-title">إصلاح دقيق لـ <br> <span class="highlight">التكنولوجيا والصحة</span>.</h1>
+                <p data-i18n="hero-desc">صيانة خبيرة لأجهزة الكمبيوتر المحمولة المتطورة والأجهزة الطبية الحساسة، متخصصة
+                    في معايرة مكثفات الأكسجين، وتشخيص السونار، واللحام الدقيق للوحات الأم، والإدارة الحرارية. تقديم
+                    الرعاية التقنية للأجهزة الحيوية منذ عام 20XX.</p>
+                <div class="hero-buttons">
+                    <a href="contact.html" class="btn btn-primary" data-i18n="hero-btn-contact">اتصل بنا</a>
+                    <a href="#location" class="btn btn-outline" data-i18n="hero-btn-location">موقعنا</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="services container" id="services">
+            <div class="section-header animate">
+                <h2 data-i18n="services-title">خبراتنا</h2>
+                <div class="line"></div>
+            </div>
+
+            <div class="services-grid">
+                <a href="medical.html" class="service-card animate">
+                    <i class="fas fa-heartbeat"></i>
+                    <h3 data-i18n="service-medical-title">الأجهزة الطبية</h3>
+                    <p data-i18n="service-medical-desc">صيانة متخصصة لمكثفات الأكسجين، أنظمة السونار، والإلكترونيات
+                        الطبية الدقيقة. رعاية تقنية معتمدة.</p>
+                    <div class="card-link">
+                        <span data-i18n="card-click">انقر للعرض</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </a>
+
+                <a href="laptop-repair.html" class="service-card animate" style="animation-delay: 0.1s;">
+                    <i class="fas fa-microchip"></i>
+                    <h3 data-i18n="service-laptop-title">لابتوب وكمبيوتر</h3>
+                    <p data-i18n="service-laptop-desc">إصلاح لوحات الأم عالي المستوى، صيانة الحواسيب، وترقية الأداء
+                        لمحطات العمل المتطورة.</p>
+                    <div class="card-link">
+                        <span data-i18n="card-click">انقر للعرض</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </a>
+
+                <a href="products.html" class="service-card animate" style="animation-delay: 0.2s;">
+                    <i class="fas fa-server"></i>
+                    <h3 data-i18n="service-sales-title">المبيعات وتقنية المعلومات</h3>
+                    <p data-i18n="service-sales-desc">تشكيلة ممتازة من أجهزة الكمبيوتر ومكونات الأجهزة. معدات احترافية
+                        للمحترفين.</p>
+                    <div class="card-link">
+                        <span data-i18n="card-click">انقر للعرض</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+
+
+        <section class="location-section container animate" id="location">
+            <div class="section-header">
+                <h2 data-i18n="loc-title">ورشتنا التقنية</h2>
+                <p data-i18n="loc-desc">قم بزيارتنا للفحص الفني والتدقيق في الأجهزة.</p>
+                <div class="line"></div>
+            </div>
+            <div class="map-wrapper container animate">
+                <iframe id="map"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3261.3524!2d3.0588!3d36.7538!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzbCsDQ1JzEzLjYiTiAzwrAwMyczMS43IkU!5e0!3m2!1sen!2sdz!4v1700000000000"
+                    allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-layout">
+            <div class="footer-brand">
+                <div class="logo">LAB-TECH</div>
+                <p data-i18n="footer-tagline">التميز التقني في الإصلاح والمبيعات</p>
+            </div>
+            <div class="footer-contact">
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <span>+213 00 00 00 00</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <span>contact@labtech.dz</span>
+                </div>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Lab-Tech Workshop. <span data-i18n="footer-managed">تسيير من طرف</span> <span
+                    class="owners">Chiheb & Soufian</span></p>
+        </div>
+    </footer>
+
+    <script src="security.js"></script>
+    <script src="translations.js"></script>
+    <script src="global-script.js"></script>
+</body>
+
+</html>

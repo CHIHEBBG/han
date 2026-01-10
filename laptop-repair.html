@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laptop & PC Repair | LAB-TECH Workshop</title>
+    <meta name="description"
+        content="Expert repair services for gaming laptops, high-performance PCs, and workstations. Motherboard micro-soldering and custom builds.">
+    <link rel="icon" type="image/svg+xml"
+        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💻</text></svg>">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="nav-overlay" id="navOverlay"></div>
+
+    <header class="scrolled">
+        <div class="logo">
+            <a href="index.html">LAB-TECH <span>Workshop</span></a>
+        </div>
+
+        <nav id="navMenu">
+            <a href="index.html" data-i18n="nav-home">Home</a>
+            <a href="medical.html" data-i18n="service-medical-title">Medical Devices</a>
+            <a href="laptop-repair.html" class="active-link" data-i18n="nav-laptop-pc">Laptop & PC</a>
+            <a href="products.html" data-i18n="service-sales-title">Sales & IT</a>
+            <a href="contact.html" data-i18n="nav-contact">Contact</a>
+        </nav>
+
+        <div class="header-right">
+            <div class="lang-switcher">
+                <button class="lang-btn" onclick="setLanguage('ar')">العربية</button>
+                <button class="lang-btn" onclick="setLanguage('en')">EN</button>
+                <button class="lang-btn" onclick="setLanguage('fr')">FR</button>
+            </div>
+            <div class="menu-toggle" id="menuToggle">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero hero-small">
+            <div class="hero-content animate">
+                <h1 data-i18n="lap-hero-title">High-Performance <br> <span class="highlight">Computer Repair</span></h1>
+                <p data-i18n="lap-hero-desc">Specialized diagnostics and repair for gaming rigs, workstations, and
+                    business laptops. We bring your hardware back to life.</p>
+                <div class="hero-buttons">
+                    <a href="#gallery" class="btn btn-primary" data-i18n="lap-btn-view">View Repairs</a>
+                    <a href="contact.html" class="btn btn-outline" data-i18n="lap-btn-book">Book Service</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="services" id="gallery">
+            <div class="section-header animate">
+                <h2 data-i18n="lap-gallery-title">Recent Repair Works</h2>
+                <div class="line"></div>
+                <p data-i18n="lap-gallery-sub">A showcase of our precision work on high-end electronics.</p>
+            </div>
+            <div class="gallery-grid container">
+                <div class="gallery-item animate">
+                    <div class="gallery-img">
+                        <img src="laptop-motherboard.png" alt="Motherboard Repair" loading="lazy">
+                    </div>
+                    <div class="gallery-info">
+                        <h3 data-i18n="lap-work-1-title">Micro-Soldering</h3>
+                        <p data-i18n="lap-work-1-desc">Precision chipset replacement and motherboard recovery.</p>
+                    </div>
+                </div>
+                <div class="gallery-item animate" style="animation-delay: 0.1s;">
+                    <div class="gallery-img">
+                        <img src="laptop-screen.png" alt="Screen Replacement" loading="lazy">
+                    </div>
+                    <div class="gallery-info">
+                        <h3 data-i18n="lap-work-2-title">Screen Restoration</h3>
+                        <p data-i18n="lap-work-2-desc">Original panel replacement for broken or malfunctioning screens.
+                        </p>
+                    </div>
+                </div>
+                <div class="gallery-item animate" style="animation-delay: 0.2s;">
+                    <div class="gallery-img">
+                        <img src="gaming-pc.png" alt="Gaming Setup" loading="lazy">
+                    </div>
+                    <div class="gallery-info">
+                        <h3 data-i18n="lap-work-3-title">Custom Builds & Cooling</h3>
+                        <p data-i18n="lap-work-3-desc">Water cooling maintenance, thermal optimization, and cable
+                            management.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="maintenance-section">
+            <div class="container maintenance-info animate">
+                <div class="maintenance-text">
+                    <h2 data-i18n="lap-services-title">Our Computer Services</h2>
+                    <ul class="maintenance-list">
+                        <li><i class="fas fa-check-circle"></i> <span data-i18n="lap-service-1">Hardware Diagnostics &
+                                Troubleshooting</span></li>
+                        <li><i class="fas fa-check-circle"></i> <span data-i18n="lap-service-2">Virus Removal & Data
+                                Recovery</span></li>
+                        <li><i class="fas fa-check-circle"></i> <span data-i18n="lap-service-3">System Upgrades (SSD,
+                                RAM, GPU)</span></li>
+                        <li><i class="fas fa-check-circle"></i> <span data-i18n="lap-service-4">Bios Programming & Chip
+                                Flashing</span></li>
+                        <li><i class="fas fa-check-circle"></i> <span data-i18n="lap-service-5">Keyboard & Trackpad
+                                Replacement</span></li>
+                        <li><i class="fas fa-check-circle"></i> <span data-i18n="lap-service-6">Laptop body replacement
+                                & body repairing</span></li>
+                    </ul>
+                </div>
+                <div class="maint-visual" style="font-size: 8rem; opacity: 0.1;">
+                    <i class="fas fa-laptop-code"></i>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container footer-layout">
+            <div class="footer-brand">
+                <div class="logo">LAB-TECH</div>
+                <p data-i18n="footer-tagline">Technical Excellence in Repair & Sales</p>
+            </div>
+            <div class="footer-contact">
+                <div class="contact-item"><i class="fas fa-phone"></i> <span>+213 00 00 00 00</span></div>
+                <div class="contact-item"><i class="fas fa-envelope"></i> <span>contact@labtech.dz</span></div>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Lab-Tech Workshop. <span data-i18n="footer-managed">Managed by</span> <span
+                    class="owners">Chiheb & Soufian</span></p>
+        </div>
+    </footer>
+
+    <script src="security.js"></script>
+    <script src="translations.js"></script>
+    <script src="global-script.js"></script>
+</body>
+
+</html>
