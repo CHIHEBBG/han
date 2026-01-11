@@ -401,9 +401,69 @@ header {
     font-weight: 600;
 }
 
+/* --- Mobile Menu Styles --- */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    gap: 6px;
+    cursor: pointer;
+    z-index: 2001;
+    margin-left: 15px;
+}
+
+.menu-toggle span {
+    width: 25px;
+    height: 2px;
+    background: var(--text-dark);
+    transition: var(--transition);
+}
+
+.menu-toggle.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.menu-toggle.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-toggle.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(6px, -6px);
+}
+
+.nav-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+    z-index: 1998;
+    display: none;
+}
+
+.nav-overlay.active {
+    display: block;
+}
+
 /* --- RTL Fixes --- */
 [lang="ar"] .logo {
     text-align: right;
+}
+
+[lang="ar"] .menu-toggle {
+    margin-left: 0;
+    margin-right: 15px;
+}
+
+[lang="ar"] .centered-nav {
+    left: auto;
+    right: -100%;
+}
+
+[lang="ar"] .centered-nav.active {
+    left: auto;
+    right: 0;
 }
 
 /* --- Animations --- */
@@ -438,22 +498,62 @@ header {
 
 @media (max-width: 768px) {
     header {
-        height: auto;
-        flex-direction: column;
-        padding: 20px;
+        height: 70px;
+        flex-direction: row;
+        padding: 0 5%;
+    }
+
+    .menu-toggle {
+        display: flex;
     }
 
     .centered-nav {
-        margin: 20px 0;
-        width: 100%;
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 280px;
+        height: 100vh;
+        background: var(--white);
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        z-index: 1999;
+        transition: var(--transition);
+        box-shadow: 10px 0 30px rgba(0, 0, 0, 0.1);
+        margin: 0;
+    }
+
+    .centered-nav.active {
+        left: 0;
     }
 
     .header-actions {
-        width: 100%;
-        justify-content: center;
+        flex: none;
     }
 
     .medical-hero {
-        padding-top: 140px;
+        padding: 140px 0 80px;
+    }
+
+    .medical-hero h1 {
+        font-size: 2.2rem;
+        padding: 0 10px;
+    }
+
+    .medical-hero p {
+        font-size: 1.1rem;
+        padding: 0 15px;
+    }
+
+    .hero-btns {
+        flex-direction: column;
+        padding: 0 20px;
+    }
+
+    .btn-primary,
+    .btn-secondary {
+        width: 100%;
+        text-align: center;
     }
 }
